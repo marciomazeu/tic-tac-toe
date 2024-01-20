@@ -1,0 +1,121 @@
+*{
+    font-family: 'Averia Sans Libre', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    height: 100vh;
+    scroll-behavior: unset;
+    background: rgb(250,112,6);
+    background: linear-gradient(45deg, rgba(250,112,6,1) 0%, rgba(241,175,32,1) 35%, rgba(246,209,15,1) 100%);
+}
+.tabuleiro{
+    width:500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;padding:0px;
+}
+
+.quadrado{
+    /*border:1px solid #333;*/
+    width:163px;
+    height: 163px;
+    text-align: center;
+    align-items: center;
+    font-size: 8rem;
+    margin:0px;
+    padding:0px;
+}
+
+.borda-lateral{
+    border-left: 4px solid #444;
+    border-right: 4px solid #444;
+}
+
+.borda-inferior-superior{
+    border-top: 4px solid #444;
+    border-bottom: 4px solid #444;
+}
+
+.display{
+    width:100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tela__titulo{
+    width:fit-content;
+    margin: 0 auto;
+    align-self: center;
+    justify-content: center;
+    vertical-align: middle;
+   
+    position: relative;
+}
+.tela__titulo>h1{
+    color:#304C89;
+    font-size: 3rem;
+}
+
+#tela__inicial{
+    width:fit-content;
+    margin: 0 auto;
+    padding:3rem;
+    /*border: 1px solid red;*/
+    align-self: center;
+    justify-content: center;
+    margin-top:10%;
+}
+#tela__inicial>button{
+    font-size: 1.5rem;
+    padding:1rem;
+    width:250px;
+    margin:1rem;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.tela__jogo{
+    width: 600px;
+    display:flex;
+    flex-direction: column;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+#container-vencedor{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    border: 2px solid #444;
+    border-radius: 12px;
+    font-size: 1.3rem;
+margin: 0 auto;
+padding-top:4rem;
+padding-bottom: 2rem;
+align-items: center;
+justify-content: center;
+text-align: center;
+position: absolute;
+top:calc(50% - 100px);
+/*top:0px;*/
+left:calc(50% - 250px);
+background-color: white;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+#container-vencedor>button{
+    width:130px;
+font-size: 1.3rem;
+padding:1rem;
+border-radius: 8px;
+}
+.hidden {
+    display:none;
+    
+}
