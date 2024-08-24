@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Jogo da velha</title>
-</head>
-<body>
-   
+  </head>
+  <body>
     <div class="tela__titulo">
-        <h1>Jogo da Velha</h1>
+      <h1>Jogo da Velha</h1>
     </div>
-    
+
     <div id="tela__inicial">
-        <button disabled="true">1 Jogador VS PC</button>
-        <button id="2players">2 Jogadores</button>
+      <button disabled="true">1 Jogador VS PC</button>
+      <button id="2players">2 Jogadores</button>
     </div>
     <div id="tela__jogo" class="hidden">
-        <div class="display">
-            
-            <h2>É a vez o jogador: <span id="jogador"></span></h2>
+      <div class="display">
+        <h2>Placar</h2>
+        <div>
+          <h3>Jogador X:<span> </span> <span id="jogadorX"></span></h3>
+          <h3>Jogador O: <span> </span><span id="jogadorO"></span></h3>
         </div>
-        
-        <div class="tabuleiro">
-            <div class="quadrado" id="1"></div>
-            <div class="quadrado borda-lateral" id="2" ></div>
-            <div class="quadrado" id="3"></div>
-            <div class="quadrado borda-inferior-superior" id="4"></div>
-            <div class="quadrado borda-lateral borda-inferior-superior" id="5"></div>
-            <div class="quadrado borda-inferior-superior" id="6"></div>
-            <div class="quadrado" id="7"></div>
-            <div class="quadrado borda-lateral" id="8"></div>
-            <div class="quadrado" id="9"></div>
-        </div>
+
+        <h2>É a vez o jogador: <span id="jogador"></span></h2>
+      </div>
+
+      <div class="tabuleiro">
+        <div class="quadrado" id="1"></div>
+        <div class="quadrado borda-lateral" id="2"></div>
+        <div class="quadrado" id="3"></div>
+        <div class="quadrado borda-inferior-superior" id="4"></div>
+        <div
+          class="quadrado borda-lateral borda-inferior-superior"
+          id="5"
+        ></div>
+        <div class="quadrado borda-inferior-superior" id="6"></div>
+        <div class="quadrado" id="7"></div>
+        <div class="quadrado borda-lateral" id="8"></div>
+        <div class="quadrado" id="9"></div>
+      </div>
+      <div class="divBtn"><button id="btnParar">Parar</button></div>
     </div>
     <div id="container-vencedor" class="hidden">
-        <h3 id="vencedor">O jogador x venceu!</h3>
-        <button id="continuar">Continuar</button>
-        <button id="parar">Parar</button>
+      <h3 id="vencedor">O jogador x venceu!</h3>
+      <button id="continuar">Continuar</button>
+      <button id="parar">Parar</button>
     </div>
-    
+
     <script type="text/javascript" src="main.js" defer></script>
-</body>
+  </body>
 </html>
