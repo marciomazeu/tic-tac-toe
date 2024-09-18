@@ -6,6 +6,7 @@ O jogo é um clássico e com regras extremas simples e facilmente aprendido.
 O objetivo é formar uma sequência de símbolos iguais, horizontalmente, verticalmente ou diagonalmente.
 
 ## Como jogar?
+
 -O jogo antigo é jogado em turnos alternados entre dois jogadores.
 
 -O jogo acontece em um tabuleiro de 3 X 3. e os jogadores fazem suas marcas em uma das posições durante suas respectivas rodadas.
@@ -16,10 +17,10 @@ O objetivo é formar uma sequência de símbolos iguais, horizontalmente, vertic
 
 # :hammer: Características do projeto
 
-- 'Funcionalidade 1: Opção para jogar com 2 jogadores, em turnos alternados, onde cada jogador escolhe uma posição de seu símbolo 
+- 'Funcionalidade 1: Opção para jogar com 2 jogadores, em turnos alternados, onde cada jogador escolhe uma posição de seu símbolo
 - 'Funcionalidade 2': Placar do vencedor que mostra a quantidade de vitória para cada jogador. Os dados são armazenados em local de armazenamento e não precisa de outros recursos externos.
-- 'Funcionalidade 3': Parar o jogo antes do final da partida. 
-
+- 'Funcionalidade 3': Parar o jogo antes do final da partida.
 
 ## Onde jogar
+
 [Links](https://marciomazeu.github.io/tic-tac-toe/)
