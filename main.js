@@ -7,6 +7,7 @@ const telaJogo = document.getElementById("tela__jogo");
 const twoPlayersBt = document.getElementById("2players");
 const jogadorVencedor = document.getElementById("vencedor");
 const pararBt = document.getElementById("parar");
+const btnReset = document.getElementById("btnReset");
 const continuarBt = document.getElementById("continuar");
 const musicaJogo = document.querySelector("audio");
 const audioJogo = new Audio("./audio/robot-game-134743.mp3");
@@ -52,7 +53,7 @@ twoPlayersBt.addEventListener("click", function () {
   //telaInicial.classList.add('hidden');
   telaInicial.style.display = "none";
   displayVencedor.style.display = "none";
-  //audioJogo.play();
+  audioJogo.play();
   audioJogo.volume = 0.5;
   exibirPlacar();
 });
@@ -83,6 +84,11 @@ continuarBt.addEventListener("click", function () {
   //telaInicial.style.display = "block";
   displayVencedor.style.display = "none";
   exibirPlacar();
+});
+
+btnReset.addEventListener("click", function () {
+  resetPlacar();
+  location.reload(true);
 });
 
 function vencedor(jogada, player) {
@@ -284,4 +290,13 @@ function exibirPlacar() {
 
   placarJogadorX.innerText = " " + jogadorX;
   placarJogadorO.innerText = " " + jogadorO;
+}
+
+function resetPlacar() {
+  const placar_jogo = {
+    jogadorX: 0,
+    jogadorO: 0,
+  };
+  console.log("Entrou no resetPlacar");
+  localStorage.setItem("placar", JSON.stringify(placar_jogo));
 }
